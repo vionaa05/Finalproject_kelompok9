@@ -68,6 +68,8 @@ Menyediakan akses yang mudah dan responsif di perangkat mobile (smartphone).
     • username: admin_pikma
     • password: password123
 
+## Tampilan Website
+https://drive.google.com/drive/folders/1GuM3Ca1Erwoxphh_xPXxXrksDWcXNtLr?usp=sharing
 
 
 ## 📋 Keterangan tugas
