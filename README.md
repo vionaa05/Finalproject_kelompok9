@@ -5,7 +5,7 @@
      
 | No |     Nama Anggota     |                                                       NIM / Jobdesk                                                              |
 | -- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------|
-| 1. | Viona Ardila         | 701230202 (Menyusun dokumen SRS, Membuat ERD, Use Case, Arsitektur Desain, Backend, Frontend, Demo Website Deployment, Hosting)  |
+| 1. | Viona Ardila         | 701230202 (Menyusun dokumen SRS, Membuat ERD, Use Case, Arsitektur Desain, Backend, Frontend, Demo Website, Deployment, Hosting)  |
 | 2. | Adhelia Amanda Silvy | 701230394 (Membuat Activity Diagram, Membuat Mockup, Membuat PPT, Wawancara kepada User)                                         |
 | 3. | Eka Puteri S.N       | 701230308 (Membuat Class Diagram, Melakukan Testing, Membantu membuat PPT)                                                       |
 
