@@ -1,59 +1,75 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📘 Final Project RPL-Sistem Absensi UKM PIKMA
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## 👨‍💻 Nama kelompok & anggota
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+| No |     Nama Anggota     |                                                    NIM / Jobdesk                                                 |
+| -- | -------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| 1. | Viona Ardila         | 701230202 (Menyusun dokumen SRS, Membuat ERD, Use Case, Arsitektur Desain, Coding Website, Deployment, Hosting)  |
+| 2. | Adhelia Amanda Silvy | 701230394 (Membuat Arsitektur Diagram, Activity Diagram, Membuat Mockup, Membuat PPT, Wawancara kepada User)     |
+| 3. | Eka Puteri S.N       | 701230308 (Membuat Class Diagram, Melakukan Testing, Membantu membuat PPT)                                       |
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📝 Deskripsi Singkat Aplikasi
 
-## Learning Laravel
+Sistem ini dibuat berdasarkan permintaan dari klien (kelompok 7)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Sistem Absensi UKM PIKMA adalah aplikasi web yang dirancang untuk mendigitalkan proses pencatatan kehadiran anggota dalam setiap kegiatan organisasi. Sistem ini menghilangkan penggunaan absensi manual (kertas) dan menyediakan bukti kehadiran yang akurat melalui fitur Absensi Swafoto Langsung (Live Camera).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## 🎯 Tujuan Sistem 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Mengatasi risiko data hilang dan sulitnya rekapitulasi manual.
+Mencapai akuntabilitas data melalui bukti foto dan pencatatan waktu otomatis.
+Menyediakan akses yang mudah dan responsif di perangkat mobile (smartphone).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🛠️ Teknologi yang Digunakan (framework, database, bahasa pemrograman)
 
-## Contributing
+    -Pola Arsitektur: Monolitik (Berbasis Server)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    -Design Pattern: Model-View-Controller (MVC)
 
-## Code of Conduct
+    -Bahasa Pemrograman: PHP 8.2+ dan JavaScript.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    -Framework: Laravel.
 
-## Security Vulnerabilities
+    -Database: MySQL.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    -Antarmuka: Bootstrap 5 (Responsive Design).
 
-## License
+    -Tools Tambahan: Composer (Dependency Management), Git.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## 🚀 Cara Menjalankan Aplikasi
+
+    Instalasi dan Konfigurasi
+
+    1. Clone Repository:
+    git clone [https://github.com/USERNAME/Finalproject_kelompok9.git](https://github.com/USERNAME/Finalproject_kelompok9.git) srs-absensi-pikma
+    cd srs-absensi-pikma
+    2. Instalasi Dependencies:
+    composer install
+    3. Setup Environment:
+      -Salin .env.example menjadi .env.
+      -Generate Application Key: php artisan key:generate
+    4. Konfigurasi Database:
+      -Buat database baru di phpMyAdmin (misal: srs_absensi_pikma).
+      -Atur koneksi DB di .env (DB_HOST=127.0.0.1, DB_USERNAME=root, dll.).
+    5. Migrasi Database:
+       php artisan migrate:fresh
+    6. Seed Data Admin (Wajib Login Awal):
+       php artisan db:seed --class=AdminSeeder
+
+
+## 🔐 Akun Demo (jika ada login):
+
+    - 🛡️ Login Admin
+    • username: admin_pikma
+    • password: password123
+
+
+
+## 📋 Keterangan tugas
+
+Project ini ditujukan untuk memenuhi tugas Final Project mata kuliah Rekayasa Perangkat Lunak (RPL) pada Semester 5 dengan dosen pengampu: Dila Nurlaila, M.Kom.
